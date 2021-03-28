@@ -58,6 +58,7 @@ module.exports = (app) => {
         ])
         .sort({ day: -1 })
         .limit(7)
+        .sort({ day: 1 })
         .then(dbWorkout => res.json(dbWorkout))
         .catch((error) => res.status(400).json(error));
     })
