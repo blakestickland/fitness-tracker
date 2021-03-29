@@ -6,15 +6,16 @@ module.exports = (app) => {
 // GET route for retrieving all workouts
   app.get('/api/workouts', (req, res) => {
     // const workout = new Workout(req.body);
-        Workout.aggregate([
-            {
-                $addFields: { 
-                    totalDuration: { 
-                        $sum: '$exercises.duration'
-                    } 
-                } 
-            } 
-        ])
+    Workout.getTotalDuration()
+        // Workout.aggregate([
+        //     {
+        //         $addFields: { 
+        //             totalDuration: { 
+        //                 $sum: '$exercises.duration'
+        //             } 
+        //         } 
+        //     } 
+        // ])
         .then(dbWorkout =>  
             res.json(dbWorkout)
         )
