@@ -8,7 +8,7 @@
 
 
   ## Link to the Deployed App
-  [Link to the deployed the Fitness Tracker app](https://mysterious-caverns-48540.herokuapp.com/)
+  [Link to the deployed the Fitness Tracker app](https://nameless-river-64491.herokuapp.com/)
 
   ## Link to Github repo
   [Link to Github repo for the Fitness Tracker app](https://github.com/blakestickland/fitness-tracker)
