@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const Schema = mongoose.Schema;
 
 // Define WorkoutSchema
@@ -61,8 +62,8 @@ Workout.getTotalDuration = function () {
             } 
         } 
     } 
-  ])
-}
+  ]);
+};
 
 // Export the Workout model
 module.exports = Workout;
